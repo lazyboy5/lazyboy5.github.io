@@ -74,22 +74,22 @@ html {
 }
 
 .pimg1 {
-    background-image: url('/mobs/images/logoparallax.jpg');
+    background-image: url('images/logoparallax.jpg');
     min-height: 100%;
 }
 
 .pimg2 {
-    background-image: url('/mobs/images/dark.jpg');
+    background-image: url('images/dark.jpg');
     min-height: 400px;
 }
 
 .pimg3 {
-    background-image: url('/mobs/images/light.jpg');
+    background-image: url('images/light.jpg');
     min-height: 400px;
 }
 
 .pimg4 {
-    background-image: url('/mobs/images/dark\ 2.jpg');
+    background-image: url('images/dark\ 2.jpg');
     min-height: 400px;
 }
 
