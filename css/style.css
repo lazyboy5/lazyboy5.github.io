@@ -15,35 +15,74 @@ html {
     border: 1px solid black;
 }
 
-.row-services {
-    display: flex;
-    flex-direction: row;
-    padding: 12px;
-    border: 1px solid #ccc;
-    resize: vertical;
-    box-sizing: border-box;
-    width: 100%;
-    margin-top: 6px;
-    margin-bottom: 16px;
+
+/* css for services*/
+
+.services-row {
+    padding: 0 30px 0;
 }
 
-.col-services {
-    flex: 25%;
-    padding: 15px;
-    font-size: 19px;
+.services-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.services-col {
+    float: left;
+    width: 20%;
+    padding: 20px;
+}
+
+.services-col h2 {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
     text-align: center;
 }
 
-.col-services img {
-    width: 100%;
-    height: 50%;
-    box-shadow: 5px 5px 3px;
+.services-col p {
+    font-size: 1rem;
 }
+
+.inbound {
+    background-image: url('/images/inbound.jpg');
+    min-height: 350px;
+}
+
+.outbound {
+    background-image: url('/images/outbound.jpg');
+    min-height: 350px;
+}
+
+.appointment {
+    background-image: url('/images/apointmentsetting.jpg');
+    min-height: 350px;
+}
+
+.backoffice {
+    background-image: url('/images/backoffice.jpg');
+    min-height: 350px;
+}
+
+.inbound,
+.outbound,
+.appointment,
+.backoffice {
+    position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+
+/*css for Nav bar*/
 
 .top-bar {
     position: fixed;
     background: #333;
-    overflow: hidden;
+    overflow: visible;
     width: 100%;
 }
 
@@ -60,6 +99,9 @@ html {
     background-color: red;
     color: aliceblue;
 }
+
+
+/* css for section*/
 
 .pimg1,
 .pimg2,
@@ -136,18 +178,40 @@ section {
     text-transform: uppercase;
 }
 
-.bottom-add {
-    color: red;
-    font-size: 25px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 35%;
+
+/* css for footer */
+
+footer {
+    background: #C4C4C4;
 }
 
-.bottom-add a:link {
-    color: black;
+.container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-footer a {
     text-decoration: none;
+    text-align: center;
+}
+
+.social {
+    padding-inline-start: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social li {
+    margin: 0 10px;
+    padding: 6px;
+}
+
+.social a ion-icon {
+    font-size: 1.5rem;
 }
 
 
@@ -260,20 +324,6 @@ input[type=submit] {
 
 @media screen and (max-width:600px) {
     .col {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width:960px) {
-    .service-col {
-        flex: 100%;
-        max-width: 80%;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .service-col {
         flex: 100%;
         max-width: 100%;
     }
